@@ -11,14 +11,14 @@ const emailToken = async (token, receiver, purpose) => {
     // for now this works http://localhost:5000/api/auth/forgotpassword/token
     const output1 = `<p>Hello ${
       receiver.username
-    }</p>Link for reset password: <a  href ="http://http://ec2-18-234-196-219.compute-1.amazonaws.com:3000/resetpassword/${token}"> <button>Reset</button></p><p>${
+    }</p>Link for reset password: <a  href ="http://http://ec2-18-234-196-219.compute-1.amazonaws.com/resetpassword/${token}"> <button>Reset</button></p><p>${
       receiver.role != "client" ? `Your code is ${receiver.uniqueCode}` : ""
     }<p>Regards,<br>IqApex </p>`;
 
     // for now this works http://localhost:5000/api/auth/verifyemail/token
     const output2 = `<p>Hello ${
       receiver.username
-    }</p>Link for email verification:<a href ="http://http://ec2-18-234-196-219.compute-1.amazonaws.com:3000/verifyemail/${token}"> <button>Verify</button></a> <p>${
+    }</p>Link for email verification:<a href ="http://http://ec2-18-234-196-219.compute-1.amazonaws.com/verifyemail/${token}"> <button>Verify</button></a> <p>${
       receiver.role != "client" ? `Your code is ${receiver.uniqueCode}` : ""
     }</p><p>Regards,<br>IqApex</p>`;
 
