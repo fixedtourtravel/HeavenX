@@ -1,4 +1,4 @@
-export const BASELINK = "http://ec2-18-234-196-219.compute-1.amazonaws.com:5000";
+export const BASELINK = "http://b2b.fixedtour.com:5000";
 export const LOGIN = "/login";
 export const HOME = "/";
 export const SIGNUP = "/signup";
