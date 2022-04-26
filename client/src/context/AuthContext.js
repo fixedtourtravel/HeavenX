@@ -2,6 +2,8 @@ import React, { useContext, createContext, useState, useEffect } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import axios from "axios";
 import { TOKEN_ID } from "../utils/constants";
+import * as ROUTES from "../constants/routes";
+
 const AuthContext = createContext(null);
 
 export const useAuth = () => {
@@ -21,7 +23,7 @@ export default function AuthProvider({ children }) {
       console.log("get user");
       axios({
         method: "get",
-        url: `http://localhost:5000/api/auth/user/${tokenid}`,
+        url: `${ROUTES.BASELINK}/api/auth/user/${tokenid}`,
       }).then((result) => {
         if (result.data.success) {
           console.log("success got user");
