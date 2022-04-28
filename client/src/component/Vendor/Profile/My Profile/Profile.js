@@ -383,10 +383,7 @@ function Profile({ closeButton, user, updateHandler }) {
               <Label className="query-Label" for="queryName">
                 Department
               </Label>
-              <Input
-                value={department}
-                readOnly
-              />
+              <Input value={department} readOnly />
             </div>
           )}
           {profileRole === "admin" && (
@@ -402,10 +399,7 @@ function Profile({ closeButton, user, updateHandler }) {
               <Label className="query-Label" for="queryName">
                 Role
               </Label>
-              <Input
-                value={department_role}
-                readOnly
-              />
+              <Input value={department_role} readOnly />
             </div>
           )}
           {profileRole === "admin" && (
@@ -428,7 +422,7 @@ function Profile({ closeButton, user, updateHandler }) {
           )}
         </div>
       </div>
-      {profileRole === "supplier" && (
+      {profileRole === "admin" && (
         <div className={style.profileSection}>
           <h3>Information</h3>
           <div
