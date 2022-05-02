@@ -1,2 +1,0 @@
-(this.webpackJsonpheavenx=this.webpackJsonpheavenx||[]).push([[16],{602:function(e,t,a){"use strict";a.r(t);a(1);var c=a(585),n=a(0);t.default=function(){return Object(n.jsx)(c.c,{md:"9",children:Object(n.jsx)("input",{className:"form-control",type:"text",placeholder:"Search","aria-label":"Search"})})}}}]);
-//# sourceMappingURL=16.f4e702b6.chunk.js.map
